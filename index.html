@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mandimbisoa | Développeur Web et Logiciel</title>
+  <meta
+    name="description"
+    content="Portfolio de développeur web spécialisé en PHP (Laravel), JavaScript (Vue.js), HTML, CSS, jQuery, Bootstrap, Python et Java"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Préchargeur -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Fond de particules -->
+  <div id="particles-js"></div>
+
+  <!-- En-tête -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#home">Portfolio</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="active" data-lang="nav-home">Accueil</a>
+          </li>
+          <li><a href="#about" data-lang="nav-about">À propos</a></li>
+          <li><a href="#skills" data-lang="nav-skills">Compétences</a></li>
+          <li><a href="#projects" data-lang="nav-projects">Projets</a></li>
+          <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+          <li class="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </li>
+          <li class="language-selector">
+            <button class="language-selector-btn">
+              <span data-lang="current-lang">FR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-dropdown">
+              <a href="#" class="active" data-language="fr">Français</a>
+              <a href="#" data-language="en">English</a>
+            </div>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="home" class="section">
+    <div class="container">
+      <div class="home-content">
+        <div class="text-content">
+          <h1 class="reveal-text">
+            <span data-lang="home-greeting">Bonjour, je suis</span>
+            <span class="highlight machine-ecrire" data-lang="home-role">Développeur Web</span>
+          </h1>
+          <p class="reveal-text delay-1" data-lang="home-description">
+            Spécialisé en développement web full-stack et en conception
+            logiciel, je crée des solutions modernes, interactives et
+            performantes adaptées aussi bien aux applications web que aux
+            logiciels métiers.
+          </p>
+          <div class="cta-buttons reveal-text delay-2">
+            <a
+              href="#projects"
+              class="btn btn-primary"
+              data-lang="home-btn-projects"
+              >Voir mes projets</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-secondary"
+              data-lang="home-btn-contact"
+              >Me contacter</a
+            >
+          </div>
+          <div class="social-icons reveal-text delay-3">
+            <a
+              href="https://github.com/Mandimby2003"
+              target="_blank"
+              class="pulse"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mandimbisoa-randriamanantsoa"
+              target="_blank"
+              class="pulse"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://x.com/Mandimby2003" target="_blank" class="pulse"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="image-content reveal-image">
+          <div class="profile-image-container tilt-effect">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Photo de profil"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#about">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-lang="about-title">À propos de moi</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image reveal-image">
+          <img src="assets/images/me.jpg" alt="Photo de profil" />
+        </div>
+        <div class="about-text">
+          <h3 class="reveal-text" data-lang="about-subtitle">Qui suis-je?</h3>
+          <p class="reveal-text delay-1" data-lang="about-p1">
+            Je suis un développeur web passionné par la création
+            d'applications web modernes et performantes. Avec une solide
+            expérience en développement front-end et back-end, je m'efforce de
+            créer des solutions élégantes et efficaces pour répondre aux
+            besoins des utilisateurs.
+          </p>
+          <p class="reveal-text delay-2" data-lang="about-p2">
+            Mon parcours m'a permis d'acquérir une expertise en PHP (Laravel),
+            JavaScript (Vue.js) ainsi qu'en HTML, CSS, jQuery et Bootstrap.
+            J'ai également des connaissances de base en Python et Java.
+          </p>
+          <div class="personal-info reveal-text delay-3">
+            <div class="info-item">
+              <span class="info-title" data-lang="about-name-label"
+                >Nom:</span
+              >
+              <span class="info-value">RANDRIAMANANTSOA Mandimbisoa</span>
+            </div>
+            <div class="info-item">
+              <span class="info-title" data-lang="about-email-label"
+                >Email:</span
+              >
+              <span class="info-value">mandinbyrandria@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-title" data-lang="about-availability-label"
+                >Disponibilité:</span
+              >
+              <span class="info-value" data-lang="about-availability-value"
+                >Disponible</span
+              >
+            </div>
+            <div class="info-item">
+              <span class="info-title" data-lang="about-location-label"
+                >Localisation:</span
+              >
+              <span class="info-value">Antananarivo, Madagascar</span>
+            </div>
+          </div>
+          <a 
+            href="assets/cv%20developpeur%20MANDIMBISOA.pdf" 
+            class="btn btn-primary reveal-text delay-4" 
+            data-lang="about-btn-cv" 
+            download="CV_RANDRIAMANANTSOA_Mandimbisoa.pdf">
+            Télécharger CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-lang="skills-title">
+          Mes compétences
+        </h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skills-text reveal-text">
+          <p data-lang="skills-description">
+            Voici les technologies et langages de programmation avec lesquels
+            je travaille. Je m'efforce constamment d'améliorer mes compétences
+            et d'en apprendre de nouvelles.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal-card">
+            <div class="skill-icon">
+              <i class="fab fa-php"></i>
+            </div>
+            <h3>PHP</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-1">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-2">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h3>Java</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="45%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-1">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-2">
+            <div class="skill-icon">
+              <i class="fab fa-vuejs"></i>
+            </div>
+            <h3>Vue.js</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>jQuery</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fab fa-sass"></i>
+            </div>
+            <h3>Sass</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="50%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card">
+            <div class="skill-icon">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <h3>Bootstrap</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-1">
+            <div class="skill-icon">
+              <i class="fab fa-laravel"></i>
+            </div>
+            <h3>Laravel</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-2">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Django</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="59%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL/MySQL</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card">
+            <div class="skill-icon">
+              <i class="fab fa-windows"></i>
+            </div>
+            <h3>Windows</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-1">
+            <div class="skill-icon">
+              <i class="fab fa-ubuntu"></i>
+            </div>
+            <h3>Ubuntu</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-2">
+            <div class="skill-icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <h3>Merise</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>UML</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card">
+            <div class="skill-icon">
+              <i class="fas fa-image"></i>
+            </div>
+            <h3>Photoshop</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-1">
+            <div class="skill-icon">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <h3>Illustrator</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-card delay-3">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3>Git</h3>
+            <div class="skill-level">
+              <div class="skill-progress" data-level="70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-lang="projects-title">Mes projets</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Projet vedette -->
+        <div class="featured-project reveal-text">
+          <div class="featured-project-content">
+            <div class="featured-project-image">
+              <img src="assets/images/gpatient1.JPG" alt="Projet vedette" />
+            </div>
+            <div class="featured-project-details">
+              <h3 data-lang="featured-project-title">
+                Projet Vedette: Gestion des patients
+              </h3>
+              <p data-lang="featured-project-description">
+                Ce système permet au médecin d’assurer un suivi médical complet
+                des employés du Ministère (suivi des consultations, suivi cas
+                médicaux, remplissage et impression directe d’un ordonnance,…)
+              </p>
+              <div class="featured-project-meta">
+                <div class="featured-project-tags">
+                  <span class="project-tag">Laravel</span>
+                  <span class="project-tag">Vue.js</span>
+                  <span class="project-tag">Html/Css</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Merise</span>
+                </div>
+                <div class="featured-project-links">
+                  <a href="https://youtu.be/QZxIJLuC4RI" class="demo-btn"
+                    ><i class="fas fa-play"></i>
+                    <span data-lang="project-demo">Démo</span></a
+                  >
+                  <a
+                    href="https://github.com/Mandimby2003/GPatient"
+                    target="_blank"
+                    ><i class="fab fa-github"></i>
+                    <span data-lang="project-code">Code</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrousel de projets -->
+        <div class="projects-carousel reveal-text delay-1">
+          <div class="carousel-nav carousel-prev">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="assets/images/gpatient2.JPG"
+                      alt="Gestion des patients"
+                    />
+                    <div class="project-overlay">
+                      <div class="project-info">
+                        <h3>Gestion des patients</h3>
+                        <p>
+                          Laravel, Vue.Js, Bootstrap, Html/Css, Mysql, Merise
+                        </p>
+                        <div class="project-links">
+                          <a href="#demo-gpatient" class="demo-btn"
+                            ><i class="fas fa-play"></i
+                          ></a>
+                          <a
+                            href="https://github.com/Mandimby2003/GPatient"
+                            target="_blank"
+                            ><i class="fab fa-github"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-details">
+                    <h3>Système de gestion des patients</h3>
+                    <p data-lang="project2-description">
+                      Ce sytème permet au médecin d’assurer un suivi médical
+                      complet des employés du Ministère (suivi des
+                      consultations, suivi cas médicaux, remplissage et
+                      impression directe d’un ordonnance,…)
+                    </p>
+                    <div class="project-tags">
+                      <span class="project-tag">Laravel</span>
+                      <span class="project-tag">Vue.js</span>
+                      <span class="project-tag">Html/Css</span>
+                      <span class="project-tag">MySQL</span>
+                      <span class="project-tag">Merise</span>
+                    </div>
+                    <a href="https://youtu.be/QZxIJLuC4RI" class="btn btn-secondary demo-btn">Voir la démo</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="assets/images/transport1.JPG"
+                      alt="Gestion de transport"
+                    />
+                    <div class="project-overlay">
+                      <div class="project-info">
+                        <h3>Gestion de transport</h3>
+                        <p>Django, SQLite, Html/Css, Bootstrap</p>
+                        <div class="project-links">
+                          <a href="#demo-transport" class="demo-btn"
+                            ><i class="fas fa-play"></i
+                          ></a>
+                          <a
+                            href="https://github.com/Mandimby2003/GTransport"
+                            target="_blank"
+                            ><i class="fab fa-github"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-details">
+                    <h3>Application web de simple gestion de transport</h3>
+                    <p data-lang="project3-description">
+                      Mise en place d’un tableau de board interactif pour le
+                      suivi des activités. Conception et implémentation de
+                      modules CRUD pour la gestion des véhicules, des
+                      chauffeurs, des trajets et des réservations.
+                    </p>
+                    <div class="project-tags">
+                      <span class="project-tag">Django</span>
+                      <span class="project-tag">Html/Css</span>
+                      <span class="project-tag">Bootstrap</span>
+                      <span class="project-tag">SQLite</span>
+                    </div>
+                    <a href="https://youtu.be/iH8p9pWZ7dY" class="btn btn-secondary demo-btn">Voir la démo</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="assets/images/Axit web.JPG"
+                      alt="Une maquette PSD en site web"
+                    />
+                    <div class="project-overlay">
+                      <div class="project-info">
+                        <h3>Une maquette PSD en site web</h3>
+                        <p>Html/css, Sass, JQuery</p>
+                        <div class="project-links">
+                          <a href="#demo-axit" class="demo-btn"
+                            ><i class="fas fa-play"></i
+                          ></a>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-github"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-details">
+                    <h3>Intégration d’une maquette PSD en site web</h3>
+                    <p data-lang="project4-description">
+                      Transformation d’une maquette Photoshop en interface web
+                      fonctionnelle.
+                    </p>
+                    <div class="project-tags">
+                      <span class="project-tag">Html/Css</span>
+                      <span class="project-tag">Sass</span>
+                      <span class="project-tag">JQuery</span>
+                    </div>
+                    <a href="https://youtube.com/shorts/MD6DgOwazTM" class="btn btn-secondary demo-btn">Voir la démo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-nav carousel-next">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="carousel-indicators">
+            <div class="carousel-dot active"></div>
+            <div class="carousel-dot"></div>
+            <div class="carousel-dot"></div>
+          </div>
+        </div>
+
+        <!-- Grille de projets -->
+        <div class="projects-filter reveal-text delay-2">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-lang="filter-all"
+          >
+            Tous
+          </button>
+          <button class="filter-btn" data-filter="web" data-lang="filter-web">
+            Web
+          </button>
+          <button class="filter-btn" data-filter="app" data-lang="filter-app">
+            Applications
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="design"
+            data-lang="filter-design"
+          >
+            Design
+          </button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal-card" data-category="web">
+            <div class="project-image">
+              <img src="assets/images/gpatient.JPG" alt="Projet 1" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>Gestion des patients</h3>
+                  <p>Laravel, Vue.Js, Bootstrap, Html/Css, Mysql, Merise</p>
+                  <div class="project-links">
+                    <a href="https://youtu.be/QZxIJLuC4RI" class="demo-btn"><i class="fas fa-play"></i></a>
+                    <a
+                      href="https://github.com/Mandimby2003/GPatient"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3>Système de gestion des patients</h3>
+              <p data-lang="project1-description">
+                Ce système permet au médecin d’assurer un suivi médical complet
+                des employés du Ministère (suivi des consultations, suivi cas
+                médicaux, remplissage et impression directe d’un ordonnance,…)
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Laravel</span>
+                <span class="project-tag">Vue.js</span>
+                <span class="project-tag">Html/Css</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">Merise</span>
+              </div>
+              <a href="#demo-gpatient" class="btn btn-secondary demo-btn">Voir la démo</a>
+            </div>
+          </div>
+          <div class="project-card reveal-card delay-2" data-category="web">
+            <div class="project-image">
+              <img src="assets/images/transport.JPG" alt="Projet 2" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>Gestion de transport</h3>
+                  <p>Django, SQLite, Html/Css, Bootstrap</p>
+                  <div class="project-links">
+                    <a href="#demo-transport" class="demo-btn"><i class="fas fa-play"></i></a>
+                    <a
+                      href="https://github.com/Mandimby2003/GTransport"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3>Application web de simple gestion de transport</h3>
+              <p data-lang="project3-description">
+                Mise en place d’un tableau de board interactif pour le suivi des
+                activités. Conception et implémentation de modules CRUD pour la
+                gestion des véhicules, des chauffeurs, des trajets et des
+                réservations.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Django</span>
+                <span class="project-tag">Html/Css</span>
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">SQLite</span>
+              </div>
+              <a href="https://youtu.be/iH8p9pWZ7dY" class="btn btn-secondary demo-btn">Voir la démo</a>
+            </div>
+          </div>
+          <div class="project-card reveal-card delay-3" data-category="design">
+            <div class="project-image">
+              <img src="assets/images/Axit PSD.jpg" alt="Projet 3" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>Une maquette PSD en site web</h3>
+                  <p>Html/css, Sass, JQuery</p>
+                  <div class="project-links">
+                    <a href="#demo-axit" class="demo-btn"><i class="fas fa-play"></i></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3>Intégration d’une maquette PSD en site web</h3>
+              <p data-lang="project4-description">
+                Transformation d’une maquette Photoshop en interface web
+                fonctionnelle.
+              </p><br><br><br>
+              <div class="project-tags">
+                <span class="project-tag">Html/Css</span>
+                <span class="project-tag">Sass</span>
+                <span class="project-tag">JQuery</span>
+              </div>
+              <a href="https://youtube.com/shorts/MD6DgOwazTM" class="btn btn-secondary demo-btn">Voir la démo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-lang="contact-title">Me contacter</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info reveal-text">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-lang="contact-location-title">Localisation</h3>
+                <p>Antananarivo, Madagascar</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-lang="contact-email-title">Email</h3>
+                <p>mandinbyrandria@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-lang="contact-phone-title">Téléphone</h3>
+                <p>+261 34 89 586 51</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-lang="contact-linkedin-title">LinkedIn</h3>
+                <p>www.linkedin.com/in/mandimbisoa-randriamanantsoa</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form reveal-text delay-1">
+            <h3 data-lang="contact-form-title">Envoyez-moi un message</h3>
+            <form id="contactForm" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Votre nom"
+                  data-lang-placeholder="contact-name-placeholder"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Votre email"
+                  data-lang-placeholder="contact-email-placeholder"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Sujet"
+                  data-lang-placeholder="contact-subject-placeholder"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Votre message"
+                  data-lang-placeholder="contact-message-placeholder"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-lang="contact-submit-btn"
+              >
+                Envoyer
+              </button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#home">Portfolio</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/Mandimby2003" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mandimbisoa-randriamanantsoa"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://x.com/Mandimby2003" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear">2025</span>
+            <span data-lang="footer-copyright"
+              >Mon Portfolio. Tous droits réservés.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <a href="#home" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Particles.js -->
+    <script src="js/particles.js"></script>
+
+    <!-- JS personnalisé -->
+    <script src="js/main.js"></script>
+</body>
+</html>

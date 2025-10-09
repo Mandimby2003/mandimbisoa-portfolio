@@ -200,7 +200,13 @@ $(document).ready(function() {
             'footer-copyright': 'Mon Portfolio. Tous droits réservés.',
             'demo-gpatient-title': 'Démo : Gestion des patients',
             'demo-transport-title': 'Démo : Gestion de transport',
-            'demo-axit-title': 'Démo : Maquette PSD en site web'
+            'demo-axit-title': 'Démo : Maquette PSD en site web',
+            'project-patient-title': 'Système de gestion des patients',
+            'project-transport-title': 'Application web de simple gestion de transport',
+            'project-psd-title': 'Intégration d’une maquette PSD en site web',
+            'project-patient-overlay-title': 'Gestion des patients',
+            'project-transport-overlay-title': 'Gestion de transport',
+            'project-psd-overlay-title': 'Une maquette PSD en site web'
         },
         'en': {
             'nav-home': 'Home',
@@ -253,7 +259,13 @@ $(document).ready(function() {
             'footer-copyright': 'My Portfolio. All rights reserved.',
             'demo-gpatient-title': 'Demo: Patient Management',
             'demo-transport-title': 'Demo: Transport Management',
-            'demo-axit-title': 'Demo: PSD Mockup to Website'
+            'demo-axit-title': 'Demo: PSD Mockup to Website',
+            'project-patient-title': 'Patient Management System',
+            'project-transport-title': 'Simple Transport Management Web Application',
+            'project-psd-title': 'Integration of a PSD Mockup into a Website',
+            'project-patient-overlay-title': 'Patient Management',
+            'project-transport-overlay-title': 'Transport Management',
+            'project-psd-overlay-title': 'A PSD Mockup to Website'
         }
     };
 
@@ -403,15 +415,12 @@ $(document).ready(function() {
     let diapositiveCourante = 0;
     const diapositives = $('.carousel-slide');
     const points = $('.carousel-dot');
-    let largeurDiapositive = 100; // Par défaut
-    
+
     function updateLargeurDiapositive() {
-        largeurDiapositive = 100; // Reset à 100% pour tous les écrans (stacking)
-        if ($(window).width() > 768) {
-            largeurDiapositive = 100 / Math.min(diapositives.length, 3); // Exemple: 3 slides visibles sur grand écran
-        }
+        const largeurDiapositive = 100; 
         $('.carousel-slide').css('flex', `0 0 ${largeurDiapositive}%`);
-        allerADiapositive(diapositiveCourante); // Rafraîchir
+        $('.carousel-track').css('width', `${diapositives.length * largeurDiapositive}%`); 
+        allerADiapositive(diapositiveCourante); 
     }
     
     function allerADiapositive(indice) {
@@ -422,7 +431,7 @@ $(document).ready(function() {
         }
         
         diapositiveCourante = indice;
-        $('.carousel-track').css('transform', `translateX(-${diapositiveCourante * largeurDiapositive}%)`);
+        $('.carousel-track').css('transform', `translateX(-${diapositiveCourante * 100}%)`); 
         
         points.removeClass('active');
         points.eq(diapositiveCourante).addClass('active');
@@ -462,7 +471,7 @@ $(document).ready(function() {
 
     // Initialiser EmailJS
     (function() {
-        emailjs.init("dK_vZe-pX74QtySkU"); // ta Public Key
+        emailjs.init("dK_vZe-pX74QtySkU"); 
     })();
 
     // Soumission du Formulaire de Contact

@@ -1057,14 +1057,14 @@ header .container {
 .contact-info {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; /* Réduction */
+    gap: 20px; 
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
     transition: var(--transition);
-    padding: 15px; /* Réduction */
+    padding: 15px; 
     border-radius: var(--border-radius);
     background-color: var(--card-bg);
     box-shadow: 0 5px 15px var(--shadow-color);
@@ -1075,8 +1075,8 @@ header .container {
     box-shadow: 0 10px 25px var(--shadow-color);
 }
 
-.contact-icon {
-    width: 50px; /* Réduction pour petits écrans */
+.contact-icon { 
+    width: 50px; 
     height: 50px;
     background-color: var(--primary-color);
     border-radius: 50%;
@@ -1085,7 +1085,7 @@ header .container {
     justify-content: center;
     margin-right: 15px;
     color: white;
-    font-size: 1.2rem; /* Réduction */
+    font-size: 1.2rem; 
     transition: var(--transition);
 }
 
@@ -1100,7 +1100,7 @@ header .container {
 
 .contact-form {
     background-color: var(--card-bg);
-    padding: 20px; /* Réduction */
+    padding: 20px; 
     border-radius: var(--border-radius);
     box-shadow: 0 10px 30px var(--shadow-color);
 }
@@ -1242,7 +1242,7 @@ footer {
 /*---------------------------
     Conception Responsive
 ----------------------------*/
-/* Pour tablettes et grands mobiles (ex. iPhone XR) */
+/* Pour tablettes et grands mobiles  */
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 2.8rem;
@@ -1303,7 +1303,7 @@ footer {
     }
 }
 
-/* Pour mobiles standards (ex. iPhone XR, Galaxy) */
+/* Pour mobiles standards*/
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -1361,7 +1361,7 @@ footer {
     }
     
     .profile-image-container {
-        width: 100%; /* Full width sur mobile */
+        width: 100%; 
         max-width: 280px;
         aspect-ratio: 1/1;
     }

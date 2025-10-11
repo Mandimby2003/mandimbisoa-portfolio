@@ -729,14 +729,6 @@ header .container {
     transition: var(--transition);
 }
 
-.skill-level {
-    width: 100%;
-    height: 8px;
-    background-color: var(--light-color);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 .skill-progress {
     height: 100%;
     background-color: var(--primary-color);

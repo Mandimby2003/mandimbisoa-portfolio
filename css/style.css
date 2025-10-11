@@ -1075,7 +1075,7 @@ header .container {
     box-shadow: 0 10px 25px var(--shadow-color);
 }
 
-.contact-icon { 
+.contact-icon {
     width: 50px; 
     height: 50px;
     background-color: var(--primary-color);
@@ -1100,7 +1100,7 @@ header .container {
 
 .contact-form {
     background-color: var(--card-bg);
-    padding: 20px; 
+    padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: 0 10px 30px var(--shadow-color);
 }
@@ -1303,7 +1303,7 @@ footer {
     }
 }
 
-/* Pour mobiles standards*/
+/* Pour mobiles standards  */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;

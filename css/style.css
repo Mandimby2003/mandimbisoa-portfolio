@@ -440,7 +440,6 @@ header .container {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
 }
 
 .home-content {
@@ -727,6 +726,14 @@ header .container {
 .skill-card h3 {
     margin-bottom: 15px;
     transition: var(--transition);
+}
+
+.skill-level {
+    width: 100%;
+    height: 8px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .skill-progress {
@@ -1316,7 +1323,7 @@ footer {
     
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 100%;
         right: -100%;
         width: 250px;
         height: calc(100vh - 70px);
@@ -1440,6 +1447,33 @@ footer {
     .contact-icon {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    header.scrolled {
+        padding: 10px 0;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        top: 100%;
+        width: 100%;
+        height: calc(100vh - 50px);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .theme-toggle i,
+    .language-selector-btn {
+        font-size: 1rem;
     }
 }
 

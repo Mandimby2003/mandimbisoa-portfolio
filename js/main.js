@@ -1,7 +1,7 @@
 $(document).ready(function () {
   "use strict";
 
-  //Vérification de l'existence des éléments 
+  //Vérification de l'existence des éléments
   const $preloader = $(".preloader");
   const $particles = $("#particles-js");
   const $themeToggle = $(".theme-toggle");
@@ -134,6 +134,7 @@ $(document).ready(function () {
       "filter-web": "Web",
       "filter-app": "Applications",
       "filter-design": "Design",
+      "cin-project-title": "Traitement Intelligent des CIN Malgaches",
       "project1-description":
         "Ce système permet au médecin d'assurer un suivi médical complet des employés du Ministère (suivi des consultations, suivi cas médicaux, remplissage et impression directe d'une ordonnance, etc.)",
       "project3-description":
@@ -154,22 +155,22 @@ $(document).ready(function () {
       "contact-message-placeholder": "Votre message",
       "contact-submit-btn": "Envoyer",
       "footer-copyright": "Mandimbisoa RANDRIAMANANTSOA. Tous droits réservés.",
-      "ocr": "Reconnaissance de texte",
-      "face": "Reconnaissance faciale",
-      "opencv": "Vision par ordinateur",
-      "pillow": "Traitement d'image",
-      "numpy": "Calcul scientifique",
-      "postgresql": "Relationnelle",
-      "mysql": "Relationnelle",
+      ocr: "Reconnaissance de texte",
+      face: "Reconnaissance faciale",
+      opencv: "Vision par ordinateur",
+      pillow: "Traitement d'image",
+      numpy: "Calcul scientifique",
+      postgresql: "Relationnelle",
+      mysql: "Relationnelle",
     },
     en: {
-      "mysql": "Relational",
-      "postgresql": "Relational",
-      "numpy": "Scientific Computing",
-      "pillow": "Image Processing",
-      "opencv": "Computer Vision",
-      "face": "Face Recognition",
-      "ocr": "Text Recognition",
+      mysql: "Relational",
+      postgresql: "Relational",
+      numpy: "Scientific Computing",
+      pillow: "Image Processing",
+      opencv: "Computer Vision",
+      face: "Face Recognition",
+      ocr: "Text Recognition",
       "nav-home": "Home",
       "nav-about": "About",
       "nav-skills": "Skills",
@@ -215,6 +216,7 @@ $(document).ready(function () {
       "filter-web": "Web",
       "filter-app": "Applications",
       "filter-design": "Design",
+      "cin-project-title": "Intelligent Processing of Malagasy ID Cards",
       "project1-description":
         "This system allows doctors to ensure complete medical follow-up of Ministry employees (consultation tracking, medical case tracking, filling and direct printing of prescriptions, etc.)",
       "project3-description":
